@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ai-chat-ingress
+  namespace: ollama 
+  annotations:
+    # kubernetes.io/ingress.class: "nginx" # Optional, hängt vom Controller ab
+spec:
+  ingressClassName: nginx # Oder anderer Name deines Ingress Controllers
+  rules:
+  - host: chat.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: webui-frontend
+            port:
+              number: 8080
