@@ -1,4 +1,4 @@
-# AI Chat App Deployment in Kubernetes (Basis)
+# AI Chat App Deployment in Kubernetes 
 
 Dieses Projekt demonstriert das Deployment einer Multi-Container AI Chat App (Ollama Backend, Open WebUI Frontend) in einem lokalen Kubernetes Cluster (speziell optimiert für **Docker Desktop Kubernetes**). Die Anwendung wird in einem dedizierten **`ollama` Namespace** bereitgestellt.
 
@@ -29,7 +29,7 @@ Die Anwendung besteht aus folgenden Hauptkomponenten:
 
 ---
 
-## ✅ Voraussetzungen
+## Voraussetzungen
 
 Stell sicher, dass die folgenden Punkte erfüllt sind:
 
